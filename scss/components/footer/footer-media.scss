@@ -1,0 +1,99 @@
+@include full-hd {
+  .footer {
+    &__form label:after {
+      right: 0%;
+    }
+  }
+}
+
+@include hd {
+  .footer {
+    &__form label:after {
+      right: -25%;
+    }
+
+    &__form .dropdown-btn:before {
+      right: 60%;
+    }
+  }
+}
+
+@include laptop {
+  .footer {
+    .footer-row {
+      display: block;
+    }
+
+    &__nav,
+    &__address,
+    &__form {
+      width: 100%;
+      padding-left: 20px;
+    }
+
+    &__form .form-control,
+    &__form .dropdown-btn {
+      width: 400px;
+    }
+
+    &__form label:after {
+      right: 57%;
+    }
+
+    &__form .dropdown-btn:before {
+      right: 77%;
+    }
+  }
+}
+@include tablet {
+  .footer {
+    &__form label:after {
+      right: 40%;
+    }
+
+    &__form .dropdown-btn:before {
+      right: 68%;
+    }
+  }
+}
+
+@include phone {
+  footer .container {
+    max-width: 350px;
+  }
+  .footer {
+    &__form label:after {
+      right: 22%;
+    }
+
+    &__form .dropdown-btn:before {
+      right: 65%;
+    }
+
+    &__nav,
+    &__address,
+    &__form {
+      padding-left: 20px;
+    }
+
+    &__nav {
+      flex-wrap: wrap;
+      .products {
+        padding-right: 30px;
+        padding-top: 40px;
+      }
+    }
+
+    &__form .form-control,
+    &__form .dropdown-btn {
+      width: 300px;
+    }
+
+    &__rules {
+      .like {
+        padding-left: 5px;
+        padding-right: 15px;
+      }
+    }
+  }
+}

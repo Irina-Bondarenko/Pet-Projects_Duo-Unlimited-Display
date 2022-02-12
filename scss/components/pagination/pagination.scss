@@ -1,0 +1,73 @@
+.paginationPage {
+  margin-top: 35px;
+  padding-bottom: 35px;
+  @extend %d-flex-between;
+
+  &__dropdown {
+    .dropdown button {
+      @extend %search-btn;
+      width: 80px;
+      height: 35px;
+      font-size: $font-size-sm;
+      font-weight: 800;
+      border: 1px solid #e2e2e2;
+
+      img {
+        margin-bottom: 3px;
+      }
+    }
+
+    & .dropdown-toggle::after {
+      display: none;
+    }
+  }
+  .page-item:first-child .page-link,
+  .page-item:last-child .page-link {
+    border-radius: initial;
+    width: 80px;
+  }
+
+  #img-page1,
+  #img-page2 {
+    width: 90px;
+    background-color: $dark-grey;
+    opacity: 20%;
+    border-radius: 100px;
+
+    &:hover {
+      background-color: $bright-green;
+      transition: 0.3s;
+      opacity: initial;
+    }
+
+    img {
+      margin-left: 15px;
+    }
+  }
+
+  li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .page-number {
+    background-color: $bg-white;
+    border: 1px solid #e2e2e2;
+    border-radius: 100px;
+    width: 70px;
+    height: 35px;
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+  .pagination {
+    gap: 15px;
+
+    p {
+      color: $dark-grey;
+      display: contents;
+    }
+  }
+}

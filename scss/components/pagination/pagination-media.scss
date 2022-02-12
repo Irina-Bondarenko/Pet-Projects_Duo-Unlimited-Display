@@ -1,0 +1,21 @@
+@include laptop {
+  .paginationPage .pagination {
+    gap: 9px;
+  }
+}
+
+@include phone {
+  .paginationPage {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paginationPage .pagination {
+    gap: 1px;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+}

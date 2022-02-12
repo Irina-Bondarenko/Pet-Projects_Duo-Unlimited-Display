@@ -1,0 +1,22 @@
+@include hd {
+  .nav-link img {
+    display: block;
+  }
+}
+
+@include tablet {
+  .navbar-brand {
+    padding-bottom: 1.3125rem;
+  }
+}
+
+@include phone {
+  .navbar-brand {
+    padding-bottom: 1.3125rem;
+  }
+
+  header .search__button {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+}

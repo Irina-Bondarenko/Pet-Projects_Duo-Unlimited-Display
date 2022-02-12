@@ -1,0 +1,132 @@
+footer {
+  background-color: $footer-bg;
+
+  .btn-up {
+    @include btn-up;
+  }
+}
+
+.footer {
+  .row {
+    padding-bottom: 15px;
+  }
+
+  p {
+    color: $bg-white;
+    margin: 0;
+  }
+
+  &__address {
+    padding: 45px 0 20px 0;
+
+    img[alt="logo"] {
+      margin-bottom: 15px;
+      width: 150px;
+      height: 35px;
+    }
+
+    .location,
+    .phone,
+    .email {
+      margin-bottom: 20px;
+
+      img {
+        margin-right: 15px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $light-grey;
+        font-size: $font-size-sm;
+      }
+    }
+  }
+
+  &__nav {
+    padding-top: 45px;
+    padding-left: 30px;
+    @extend %d-flex-between;
+
+    h5 {
+      color: $bg-white;
+    }
+
+    a {
+      text-decoration: none;
+      color: $light-grey;
+      font-size: $font-size-sm;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+
+  &__form {
+    padding: 47px 20px 45px 50px;
+
+    h5 {
+      color: $bg-white;
+      padding-bottom: 20px;
+    }
+
+    .form-control {
+      text-align: center;
+      @extend %footer-btns;
+    }
+
+    form {
+      position: relative;
+    }
+
+    input {
+      text-align: center;
+    }
+
+    label:after {
+      @include footer-btn-after;
+    }
+
+    .dropdown-btn {
+      @extend %footer-btns;
+    }
+
+    .dropdown-btn:focus {
+      color: #212529;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+
+    .contact-form__dropdown {
+      position: relative;
+      padding-bottom: 35px;
+    }
+
+    .dropdown-btn:before {
+      @include footer-btn-before;
+    }
+
+    .socials {
+      padding-left: 20px;
+
+      img {
+        margin-left: 2px;
+      }
+    }
+  }
+
+  &__rules {
+    background-color: $main-black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 85px;
+    color: $light-grey;
+
+    .like {
+      padding-left: 20px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

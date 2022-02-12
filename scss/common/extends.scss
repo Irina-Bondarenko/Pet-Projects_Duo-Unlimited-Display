@@ -1,0 +1,43 @@
+%logo-u {
+  position: absolute;
+  left: 18%;
+  top: 30%;
+}
+
+%logo-o {
+  position: absolute;
+  left: 33%;
+  top: 30%;
+}
+
+%logo-point {
+  position: absolute;
+  left: 48%;
+  bottom: 0%;
+}
+
+%search-btn {
+  background-color: $bg-white;
+  color: $main-black;
+  border: none;
+  border-radius: 40px;
+}
+
+%footer-btns {
+  color: $dark-grey;
+  background-color: $footer-bg;
+  border: 1px solid $dark-grey;
+  border-radius: 40px;
+  width: 230px;
+  height: 50px;
+}
+
+%d-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%d-flex-around {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,204 @@
+.main-page {
+  &__display-wall {
+    @include hover-active-focus-dis;
+    color: $main-black;
+  }
+
+  .display-wall-dropdown button {
+    @extend %search-btn;
+    font-size: $font-size-md;
+    padding: 15px 25px 15px 30px;
+    width: 90%;
+  }
+
+  & .dropdown-toggle::after {
+    display: none;
+  }
+
+  .display-wall-dropdown img {
+    padding-left: 50px;
+  }
+
+  &__search-form {
+    padding: 0;
+    button {
+      border: none;
+      background-color: $bg-white;
+      margin-left: -50px;
+    }
+  }
+
+  .form-control {
+    border: none;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 40px;
+    color: $light-grey;
+    font-size: $font-size-md;
+
+    &:after {
+      content: "";
+      background-image: url("./../images/icons/zoom-icon.svg");
+      width: 10px;
+      height: 20px;
+    }
+  }
+
+  &__aside {
+    background-color: $bg-white;
+    border-radius: 16px;
+    margin-top: 25px;
+    height: fit-content;
+  }
+
+  &__plates {
+    margin-top: 25px;
+
+    .plates {
+      display: flex;
+    }
+  }
+
+  &__aside {
+    width: 22.5%;
+    padding-right: 10px;
+  }
+
+  .aside-control {
+    border-radius: 16px;
+    padding-bottom: 20px;
+  }
+
+  .accordion-item {
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: $light-blue;
+    background-color: $bg-white;
+    box-shadow: none;
+    padding: 15px 5px 15px 15px;
+    font-size: $font-size-xl;
+  }
+
+  .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  &__accordion .accordion-button {
+    color: $light-blue;
+    font-weight: 600;
+    font-size: $font-size-xl;
+    padding-left: 16px;
+    @extend %d-flex-between;
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  .accordion-body {
+    padding-left: 16px;
+    padding-top: 0;
+  }
+
+  .accordion-item {
+    border: 0;
+
+    input {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      position: relative;
+      top: 3px;
+      border-radius: 4px;
+    }
+
+    span {
+      color: $light-grey;
+    }
+  }
+
+  label {
+    display: block;
+    font-size: $font-size-sm;
+    padding-top: 10px;
+    align-items: center;
+  }
+
+  .clear-filter {
+    padding: 20px 15px 10px 5px;
+    font-size: $font-size-xs;
+
+    span {
+      color: $bright-red;
+    }
+
+    img {
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+    }
+
+    p {
+      color: $dark-grey;
+      margin-bottom: 0;
+      margin-right: 25px;
+    }
+  }
+
+  &__plates {
+    .plates {
+      gap: 15px;
+    }
+
+    .container {
+      padding: 0 8px;
+    }
+
+    .single_plate {
+      position: relative;
+      background-color: $bg-white;
+      border-radius: 16px;
+      overflow: hidden;
+      width: calc(100% / 3 - 15px);
+      margin-left: 5px;
+
+      &:hover .plate_image {
+        transform: translateX(-100%);
+      }
+    }
+
+    .plate_image {
+      transition: 0.7s;
+
+      img {
+        width: 100%;
+        margin-right: 10px;
+      }
+    }
+
+    .hot-links {
+      .hot-link1 {
+        position: absolute;
+        right: 5%;
+        top: 4%;
+      }
+
+      .hot-link2 {
+        position: absolute;
+        right: 5%;
+        top: 12%;
+      }
+    }
+
+    .plate_information {
+      padding-top: 25px;
+      padding-bottom: 35px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@mixin hover-active-focus-dis {
+  .btn-secondary:hover,
+  .btn-secondary:focus,
+  .btn-secondary:active {
+    color: $gray;
+    background-color: $bg-white;
+    border-color: $bg-white;
+  }
+}
+
+@mixin footer-btn-before {
+  content: "";
+  background-image: url("./../../../images/icons/white_planet.svg");
+  width: 17px;
+  height: 16px;
+  position: absolute;
+  right: 70%;
+  top: 20%;
+}
+
+@mixin footer-btn-after {
+  content: "";
+  background-image: url("./../../../images/icons/send_24px.svg");
+  width: 13px;
+  height: 11px;
+  position: absolute;
+  right: 15%;
+  top: 40%;
+}
+
+@mixin full-hd() {
+  @media (max-width: $breackpoint_xxl) {
+    @content;
+  }
+}
+
+@mixin hd() {
+  @media (max-width: $breackpoint_xl) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: $breackpoint_md) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: $breackpoint_sm) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (max-width: $breackpoint_xs) {
+    @content;
+  }
+}
+
+@mixin btn-up {
+  background-image: url("../../../images/icons/btn-up.svg");
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border-style: none;
+  position: fixed;
+  z-index: 101;
+  top: 95.5%;
+  right: 5%;
+}
