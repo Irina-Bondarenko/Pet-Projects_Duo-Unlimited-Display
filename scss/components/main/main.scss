@@ -38,7 +38,7 @@
 
     &:after {
       content: "";
-      background-image: url("./../images/icons/zoom-icon.svg");
+      background-image: url("./../../../images/icons/zoom-icon.svg");
       width: 10px;
       height: 20px;
     }
@@ -175,10 +175,12 @@
 
     .plate_image {
       transition: 0.7s;
+      margin-left: 20px;
 
       img {
         width: 100%;
         margin-right: 10px;
+        padding-right: 20px;
       }
     }
 

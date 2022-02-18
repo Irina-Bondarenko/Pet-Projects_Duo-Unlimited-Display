@@ -47,6 +47,7 @@ header .contact-form {
   padding-bottom: 5px;
 }
 header .contact-form__img {
+  background-image: url("./../../../images/icons/phone-icon.svg");
   width: 15px;
   height: 15px;
   background-repeat: no-repeat;
@@ -168,7 +169,7 @@ header .cart {
 }
 .main-page .form-control:after {
   content: "";
-  background-image: url("./../images/icons/zoom-icon.svg");
+  background-image: url("./../../../images/icons/zoom-icon.svg");
   width: 10px;
   height: 20px;
 }
@@ -275,10 +276,12 @@ header .cart {
 }
 .main-page__plates .plate_image {
   transition: 0.7s;
+  margin-left: 20px;
 }
 .main-page__plates .plate_image img {
   width: 100%;
   margin-right: 10px;
+  padding-right: 20px;
 }
 .main-page__plates .hot-links .hot-link1 {
   position: absolute;
@@ -397,7 +400,7 @@ footer {
   background-color: #26282c;
 }
 footer .btn-up {
-  background-image: url("../../../images/icons/btn-up.svg");
+  background-image: url("./../images/icons/btn-up.svg");
   width: 30px;
   height: 30px;
   border-radius: 20px;
@@ -455,6 +458,10 @@ footer .btn-up {
 .footer__nav li {
   list-style: none;
 }
+.footer__nav ul {
+  margin-left: 0;
+  padding-left: 0;
+}
 .footer__form {
   padding: 47px 20px 45px 50px;
 }
@@ -473,11 +480,11 @@ footer .btn-up {
 }
 .footer__form label:after {
   content: "";
-  background-image: url("./../../../images/icons/send_24px.svg");
+  background-image: url("./../images/icons/send_24px.svg");
   width: 13px;
   height: 11px;
   position: absolute;
-  right: 15%;
+  right: 25%;
   top: 40%;
 }
 .footer__form .dropdown-btn:focus {
@@ -491,11 +498,11 @@ footer .btn-up {
 }
 .footer__form .dropdown-btn:before {
   content: "";
-  background-image: url("./../../../images/icons/white_planet.svg");
+  background-image: url("./../images/icons/white_planet.svg");
   width: 17px;
   height: 16px;
   position: absolute;
-  right: 70%;
+  right: 75%;
   top: 20%;
 }
 .footer__form .socials {
@@ -613,6 +620,11 @@ footer .btn-up {
   font-weight: 800;
   margin: 0 auto;
 }
+.main-search ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 
 .paginationPage {
   margin-top: 35px;
@@ -673,6 +685,10 @@ footer .btn-up {
 .paginationPage .pagination p {
   color: #515151;
   display: contents;
+}
+.paginationPage .pagination ul {
+  list-style: none;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991px) {

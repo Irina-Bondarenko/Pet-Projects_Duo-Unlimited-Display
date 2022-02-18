@@ -24,12 +24,10 @@
         <div class="row">
           <div class="contact-form d-flex justify-content-between">
             <div class="contact-form__phone d-flex align-items-center p">
-              <div
-                class="contact-form__img"
-                style="
-                  background-image: url('./../images/icons/phone-icon.svg');
-                "
-              ></div>
+              <div class="contact-form__img"></div>
+              <!--                style="-->
+              <!--                  background-image: url('./../images/icons/phone-icon.svg');-->
+              <!--                "></div>-->
 
               <div class="contact-form__number">
                 <p>+33 (0)4 99 63 20 50</p>
@@ -176,30 +174,32 @@
               style="--bs-breadcrumb-divider: ''"
               aria-label="breadcrumb p-0"
             >
-              <ol class="breadcrumb m-0 p-0">
-                <li class="breadcrumb-item">
-                  <a class="green-item" href="#">Products</a>
-                </li>
+              <div class="breadcrumb m-0 p-0">
+                <ul>
+                  <li class="breadcrumb-item">
+                    <a class="green-item" href="#">Products</a>
+                  </li>
+                </ul>
 
                 <img
-                  class="main-search__line"
+                  class="main-search__line line1-1"
                   src="./../images/icons/line-icon.svg"
                   alt="line1"
-                  class="line1-1"
                 />
-
-                <li class="breadcrumb-item active" aria-current="page">
-                  Display Wall
-                </li>
+                <ul>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Display Wall
+                  </li>
+                </ul>
                 <img
-                  class="main-search__line"
+                  class="main-search__line line2-2"
                   src="./../images/icons/line-icon.svg"
                   alt="line2"
-                  class="line2-2"
                 />
-
-                <li class="breadcrumb-item"><a href="#">Products</a></li>
-              </ol>
+                <ul>
+                  <li class="breadcrumb-item"><a href="#">Products</a></li>
+                </ul>
+              </div>
             </nav>
 
             <h2>Display Wall</h2>
@@ -1129,15 +1129,17 @@
                   <div class="paginationPage d-flex">
                     <div class="paginationPage__pages">
                       <nav aria-label="Page navigation example">
-                        <ul class="pagination align-items-center">
-                          <li class="page-item">
-                            <a class="page-link" id="img-page1" href="#">
-                              <img
-                                src="./../images/icons/arrow-left.svg"
-                                alt="Previous"
-                              />
-                            </a>
-                          </li>
+                        <div class="pagination align-items-center">
+                          <ul>
+                            <li class="page-item">
+                              <a class="page-link" id="img-page1" href="#">
+                                <img
+                                  src="./../images/icons/arrow-left.svg"
+                                  alt="Previous"
+                                />
+                              </a>
+                            </li>
+                          </ul>
                           <p>Page</p>
                           <div
                             class="page-number d-flex align-items-center justify-content-center"
@@ -1145,15 +1147,17 @@
                             <span>1</span>
                           </div>
                           <p>of 128</p>
-                          <li class="page-item">
-                            <a class="page-link" id="img-page2" href="#">
-                              <img
-                                src="./../images/icons/arrow-right.svg"
-                                alt="Next"
-                              />
-                            </a>
-                          </li>
-                        </ul>
+                          <ul>
+                            <li class="page-item">
+                              <a class="page-link" id="img-page2" href="#">
+                                <img
+                                  src="./../images/icons/arrow-right.svg"
+                                  alt="Next"
+                                />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                       </nav>
                     </div>
 
@@ -1228,48 +1232,52 @@
           <div class="footer__nav col-6">
             <div class="products">
               <h5>Products</h5>
-
-              <li><a href="">Banner stands</a></li>
-              <li><a href="">Counters</a></li>
-              <li><a href="">Outdoor</a></li>
-              <li><a href="">Frames</a></li>
-              <li><a href="">Stands</a></li>
-              <li><a href="">Outdoor</a></li>
-              <li><a href="">Frames</a></li>
-              <li><a href="">Stands</a></li>
+              <ul>
+                <li><a href="">Banner stands</a></li>
+                <li><a href="">Counters</a></li>
+                <li><a href="">Outdoor</a></li>
+                <li><a href="">Frames</a></li>
+                <li><a href="">Stands</a></li>
+                <li><a href="">Outdoor</a></li>
+                <li><a href="">Frames</a></li>
+                <li><a href="">Stands</a></li>
+              </ul>
             </div>
 
             <div class="products">
               <h5>Applications</h5>
-
-              <li><a href="">Tradeshows</a></li>
-              <li><a href="">Events</a></li>
-              <li><a href="">Road-shows</a></li>
-              <li><a href="">Decoration</a></li>
-              <li><a href="">Retail</a></li>
-              <li><a href="">Printing</a></li>
+              <ul>
+                <li><a href="">Tradeshows</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Road-shows</a></li>
+                <li><a href="">Decoration</a></li>
+                <li><a href="">Retail</a></li>
+                <li><a href="">Printing</a></li>
+              </ul>
             </div>
 
             <div class="products">
               <h5>My Profile</h5>
-
-              <li><a href="">Dashboard</a></li>
-              <li><a href="">Account</a></li>
-              <li><a href="">Orders</a></li>
-              <li><a href="">Quotes</a></li>
-              <li><a href="">Retail</a></li>
-              <li><a href="">My Contacts</a></li>
+              <ul>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href="">Orders</a></li>
+                <li><a href="">Quotes</a></li>
+                <li><a href="">Retail</a></li>
+                <li><a href="">My Contacts</a></li>
+              </ul>
             </div>
 
             <div class="products">
               <h5>Duo Display</h5>
-
-              <li><a href="">About Duo</a></li>
-              <li><a href="">General terms</a></li>
-              <li><a href="">Warranty</a></li>
-              <li><a href="">Legal notice</a></li>
-              <li><a href="">Retail</a></li>
-              <li><a href="">Contact us</a></li>
+              <ul>
+                <li><a href="">About Duo</a></li>
+                <li><a href="">General terms</a></li>
+                <li><a href="">Warranty</a></li>
+                <li><a href="">Legal notice</a></li>
+                <li><a href="">Retail</a></li>
+                <li><a href="">Contact us</a></li>
+              </ul>
             </div>
           </div>
 

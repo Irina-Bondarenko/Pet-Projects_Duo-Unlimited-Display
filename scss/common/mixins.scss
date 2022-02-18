@@ -10,21 +10,21 @@
 
 @mixin footer-btn-before {
   content: "";
-  background-image: url("./../../../images/icons/white_planet.svg");
+  background-image: url("./../images/icons/white_planet.svg");
   width: 17px;
   height: 16px;
   position: absolute;
-  right: 70%;
+  right: 75%;
   top: 20%;
 }
 
 @mixin footer-btn-after {
   content: "";
-  background-image: url("./../../../images/icons/send_24px.svg");
+  background-image: url("./../images/icons/send_24px.svg");
   width: 13px;
   height: 11px;
   position: absolute;
-  right: 15%;
+  right: 25%;
   top: 40%;
 }
 
@@ -59,7 +59,7 @@
 }
 
 @mixin btn-up {
-  background-image: url("../../../images/icons/btn-up.svg");
+  background-image: url("./../images/icons/btn-up.svg");
   width: 30px;
   height: 30px;
   border-radius: 20px;

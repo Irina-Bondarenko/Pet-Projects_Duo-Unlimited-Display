@@ -5,10 +5,14 @@ header {
     font-size: $font-size-md;
     padding-bottom: 5px;
 
+
     &__img {
+      background-image: url("./../../../images/icons/phone-icon.svg");
       width: 15px;
       height: 15px;
       background-repeat: no-repeat;
+
+
     }
 
     &__number p {
