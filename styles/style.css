@@ -276,12 +276,13 @@ header .cart {
 }
 .main-page__plates .plate_image {
   transition: 0.7s;
-  margin-left: 20px;
+  margin-left: 35px;
 }
 .main-page__plates .plate_image img {
   width: 100%;
-  margin-right: 10px;
-  padding-right: 20px;
+  margin-right: 20px;
+  padding-right: 30px;
+  margin-left: -6px;
 }
 .main-page__plates .hot-links .hot-link1 {
   position: absolute;
